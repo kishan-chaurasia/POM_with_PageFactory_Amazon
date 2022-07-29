@@ -1,0 +1,5 @@
+com\amazon\testcases\PaymentGatewayPageTestCase.class
+com\amazon\testcases\LoginPageTestCase.class
+com\amazon\testcases\AmazonPayPageTestCase.class
+com\amazon\testcases\HomePageTestCase.class
+com\amazon\testcases\MobileRechargePageTestCase.class
