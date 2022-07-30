@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35488" started-at="2022-07-30T22:00:05 IST" finished-at="2022-07-30T22:00:41 IST">
+  <suite name="Default suite" duration-ms="124568" started-at="2022-07-30T22:47:31 IST" finished-at="2022-07-30T22:49:36 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35488" started-at="2022-07-30T22:00:05 IST" finished-at="2022-07-30T22:00:41 IST">
+    <test name="Default test" duration-ms="124568" started-at="2022-07-30T22:47:31 IST" finished-at="2022-07-30T22:49:36 IST">
       <class name="com.amazon.testcases.MobileRechargePageTestCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.MobileRechargePageTestCase@1a3869f4]" name="setUp" is-config="true" duration-ms="26605" started-at="2022-07-30T22:00:05 IST" finished-at="2022-07-30T22:00:32 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.MobileRechargePageTestCase@483f6d77]" name="setUp" is-config="true" duration-ms="17834" started-at="2022-07-30T22:47:31 IST" finished-at="2022-07-30T22:47:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="insertMobileRechargeDetailsTest()[pri:1, instance:com.amazon.testcases.MobileRechargePageTestCase@1a3869f4]" name="insertMobileRechargeDetailsTest" duration-ms="7278" started-at="2022-07-30T22:00:32 IST" finished-at="2022-07-30T22:00:39 IST">
+        <test-method status="PASS" signature="insertMobileRechargeDetailsTest()[pri:1, instance:com.amazon.testcases.MobileRechargePageTestCase@483f6d77]" name="insertMobileRechargeDetailsTest" duration-ms="105677" started-at="2022-07-30T22:47:49 IST" finished-at="2022-07-30T22:49:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- insertMobileRechargeDetailsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.MobileRechargePageTestCase@1a3869f4]" name="tearDown" is-config="true" duration-ms="1448" started-at="2022-07-30T22:00:39 IST" finished-at="2022-07-30T22:00:41 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.MobileRechargePageTestCase@483f6d77]" name="tearDown" is-config="true" duration-ms="921" started-at="2022-07-30T22:49:35 IST" finished-at="2022-07-30T22:49:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
