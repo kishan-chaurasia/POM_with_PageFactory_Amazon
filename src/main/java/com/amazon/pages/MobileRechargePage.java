@@ -71,7 +71,8 @@ public class MobileRechargePage extends Base {
 	// Assert Recharge Plan Amount
 	public String verifyRechargePlanAmount() {
 		String[] a = payButton.getText().split("₹");
-		return a[1];
+		String planAmount = a[1];
+		return planAmount;
 	}
 
 	// Click on Contoinue To Pay Button
