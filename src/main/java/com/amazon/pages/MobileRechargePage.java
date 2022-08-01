@@ -70,9 +70,13 @@ public class MobileRechargePage extends Base {
 
 	// Assert Recharge Plan Amount
 	public String verifyRechargePlanAmount() {
-		String a = payButton.getText();
-		String[] b = a.split("₹");
-		String planAmount = b[1];
+		/*
+		 * I have used Escape Unicode Sequence in split because Jenkins was not able to
+		 * recognize ₹(rupee symbol) while Spliting the String and throwing
+		 * ArryIndexOutOfBoundException 1
+		 */
+		String[] a = payButton.getText().split("\u20B9");
+		String planAmount = a[1];
 		return planAmount;
 	}
 

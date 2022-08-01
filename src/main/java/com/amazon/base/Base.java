@@ -7,13 +7,14 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Properties;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import com.amazon.util.TestUtil;
 
@@ -38,10 +39,14 @@ public class Base {
 
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", prop.getProperty("chromeDriverPath"));
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.setHeadless(Boolean.parseBoolean(prop.getProperty("headless")));
+			driver = new ChromeDriver(options);
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", prop.getProperty("geckoDriverPath"));
-			driver = new FirefoxDriver();
+			FirefoxOptions options = new FirefoxOptions();
+			options.setHeadless(Boolean.parseBoolean(prop.getProperty("headless")));
+			driver = new FirefoxDriver(options);
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
