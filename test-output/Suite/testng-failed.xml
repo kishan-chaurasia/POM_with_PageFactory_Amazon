@@ -13,6 +13,22 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.amazon.testcases.MobileRechargePageTestCase -->
+      <class name="com.amazon.testcases.AmazonPayPageTestCase">
+        <methods>
+          <include name="verifyAmazonPayPageImageTest"/>
+          <include name="goToMobileRechargeIconTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.amazon.testcases.AmazonPayPageTestCase -->
+      <class name="com.amazon.testcases.PaymentGatewayPageTestCase">
+        <methods>
+          <include name="loginSetUp"/>
+          <include name="addMobileRechargeAndPerformPaymentWithDebitCard"/>
+          <include name="removePaymentMethodDebitAndCreditCardTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.amazon.testcases.PaymentGatewayPageTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

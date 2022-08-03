@@ -28,12 +28,12 @@ public class Listeners extends Base implements ITestListener {
 		test.fail(result.getThrowable());
 		String methodName = result.getMethod().getMethodName();
 		test.addScreenCaptureFromPath(takeScreenshot(methodName), methodName);
-
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		test.log(Status.SKIP, "Test Skipped");
-
+		test.skip(result.getThrowable());
+		String methodName = result.getMethod().getMethodName();
+		test.addScreenCaptureFromPath(takeScreenshot(methodName), methodName);
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {

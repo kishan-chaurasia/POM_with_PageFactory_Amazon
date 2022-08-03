@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 01 17:14:39 IST 2022</td>
+<td>Started on:</td><td>Wed Aug 03 18:02:01 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>190 seconds (190454 ms)</td>
+<tr><td>Total time:</td><td>311 seconds (311019 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,120 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.amazon.testcases.MobileRechargePageTestCase.tearDown()'><b>tearDown</b><br>Test class: com.amazon.testcases.MobileRechargePageTestCase</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-J505A6L&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [64d19a983a3f8d2b5de668a2e5dedc45, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Kishan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50524}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50524/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 64d19a983a3f8d2b5de668a2e5dedc45
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:465)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:280)
+	at com.amazon.testcases.MobileRechargePageTestCase.tearDown(MobileRechargePageTestCase.java:51)
+	at java.util.ArrayList.forEach(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-J505A6L&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: driver.version: unknown
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	... 39 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-J505A6L&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:114)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1208702946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1208702946'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-J505A6L&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [64d19a983a3f8d2b5de668a2e5dedc45, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Kishan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50524}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50524/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 64d19a983a3f8d2b5de668a2e5dedc45
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:465)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:280)
+	at com.amazon.testcases.MobileRechargePageTestCase.tearDown(MobileRechargePageTestCase.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-J505A6L&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: driver.version: unknown
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	... 39 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-J505A6L&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:114)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>25</td>
+<td>com.amazon.testcases.MobileRechargePageTestCase@478db956</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,55 +189,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.amazon.testcases.AmazonPayPageTestCase.goToMobileRechargeIconTest()'><b>goToMobileRechargeIconTest</b><br>Test class: com.amazon.testcases.AmazonPayPageTestCase</td>
-<td></td>
-<td>0</td>
-<td>com.amazon.testcases.AmazonPayPageTestCase@1d9b7cce</td></tr>
-<tr>
 <td title='com.amazon.testcases.LoginPageTestCase.verifyLoginPageAmazonLogoTest()'><b>verifyLoginPageAmazonLogoTest</b><br>Test class: com.amazon.testcases.LoginPageTestCase</td>
 <td></td>
 <td>0</td>
-<td>com.amazon.testcases.LoginPageTestCase@41fbdac4</td></tr>
-<tr>
-<td title='com.amazon.testcases.HomePageTestCase.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.amazon.testcases.HomePageTestCase</td>
-<td></td>
-<td>2</td>
-<td>com.amazon.testcases.HomePageTestCase@7334aada</td></tr>
-<tr>
-<td title='com.amazon.testcases.AmazonPayPageTestCase.verifyAmazonPayPageTitleTest()'><b>verifyAmazonPayPageTitleTest</b><br>Test class: com.amazon.testcases.AmazonPayPageTestCase</td>
-<td></td>
-<td>0</td>
-<td>com.amazon.testcases.AmazonPayPageTestCase@1d9b7cce</td></tr>
-<tr>
-<td title='com.amazon.testcases.MobileRechargePageTestCase.insertMobileRechargeDetailsTest()'><b>insertMobileRechargeDetailsTest</b><br>Test class: com.amazon.testcases.MobileRechargePageTestCase</td>
-<td></td>
-<td>4</td>
-<td>com.amazon.testcases.MobileRechargePageTestCase@42e99e4a</td></tr>
-<tr>
-<td title='com.amazon.testcases.LoginPageTestCase.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.amazon.testcases.LoginPageTestCase</td>
-<td></td>
-<td>0</td>
-<td>com.amazon.testcases.LoginPageTestCase@41fbdac4</td></tr>
-<tr>
-<td title='com.amazon.testcases.PaymentGatewayPageTestCase.removePaymentMethodDebitAndCreditCardTest()'><b>removePaymentMethodDebitAndCreditCardTest</b><br>Test class: com.amazon.testcases.PaymentGatewayPageTestCase</td>
-<td></td>
-<td>9</td>
-<td>com.amazon.testcases.PaymentGatewayPageTestCase@14dd9eb7</td></tr>
+<td>com.amazon.testcases.LoginPageTestCase@238d68ff</td></tr>
 <tr>
 <td title='com.amazon.testcases.AmazonPayPageTestCase.verifyAmazonPayPageImageTest()'><b>verifyAmazonPayPageImageTest</b><br>Test class: com.amazon.testcases.AmazonPayPageTestCase</td>
 <td></td>
 <td>0</td>
-<td>com.amazon.testcases.AmazonPayPageTestCase@1d9b7cce</td></tr>
-<tr>
-<td title='com.amazon.testcases.HomePageTestCase.verifyLoggedInUserNameTest()'><b>verifyLoggedInUserNameTest</b><br>Test class: com.amazon.testcases.HomePageTestCase</td>
-<td></td>
-<td>3</td>
-<td>com.amazon.testcases.HomePageTestCase@7334aada</td></tr>
+<td>com.amazon.testcases.AmazonPayPageTestCase@389b0789</td></tr>
 <tr>
 <td title='com.amazon.testcases.PaymentGatewayPageTestCase.addMobileRechargeAndPerformPaymentWithDebitCard()'><b>addMobileRechargeAndPerformPaymentWithDebitCard</b><br>Test class: com.amazon.testcases.PaymentGatewayPageTestCase</td>
 <td></td>
-<td>32</td>
-<td>com.amazon.testcases.PaymentGatewayPageTestCase@14dd9eb7</td></tr>
+<td>42</td>
+<td>com.amazon.testcases.PaymentGatewayPageTestCase@6ca18a14</td></tr>
+<tr>
+<td title='com.amazon.testcases.MobileRechargePageTestCase.insertMobileRechargeDetailsTest()'><b>insertMobileRechargeDetailsTest</b><br>Test class: com.amazon.testcases.MobileRechargePageTestCase</td>
+<td></td>
+<td>6</td>
+<td>com.amazon.testcases.MobileRechargePageTestCase@478db956</td></tr>
+<tr>
+<td title='com.amazon.testcases.AmazonPayPageTestCase.verifyAmazonPayPageTitleTest()'><b>verifyAmazonPayPageTitleTest</b><br>Test class: com.amazon.testcases.AmazonPayPageTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.amazon.testcases.AmazonPayPageTestCase@389b0789</td></tr>
+<tr>
+<td title='com.amazon.testcases.LoginPageTestCase.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.amazon.testcases.LoginPageTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.amazon.testcases.LoginPageTestCase@238d68ff</td></tr>
+<tr>
+<td title='com.amazon.testcases.HomePageTestCase.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.amazon.testcases.HomePageTestCase</td>
+<td></td>
+<td>5</td>
+<td>com.amazon.testcases.HomePageTestCase@35a3d49f</td></tr>
+<tr>
+<td title='com.amazon.testcases.PaymentGatewayPageTestCase.removePaymentMethodDebitAndCreditCardTest()'><b>removePaymentMethodDebitAndCreditCardTest</b><br>Test class: com.amazon.testcases.PaymentGatewayPageTestCase</td>
+<td></td>
+<td>13</td>
+<td>com.amazon.testcases.PaymentGatewayPageTestCase@6ca18a14</td></tr>
+<tr>
+<td title='com.amazon.testcases.AmazonPayPageTestCase.goToMobileRechargeIconTest()'><b>goToMobileRechargeIconTest</b><br>Test class: com.amazon.testcases.AmazonPayPageTestCase</td>
+<td></td>
+<td>1</td>
+<td>com.amazon.testcases.AmazonPayPageTestCase@389b0789</td></tr>
+<tr>
+<td title='com.amazon.testcases.HomePageTestCase.verifyLoggedInUserNameTest()'><b>verifyLoggedInUserNameTest</b><br>Test class: com.amazon.testcases.HomePageTestCase</td>
+<td></td>
+<td>5</td>
+<td>com.amazon.testcases.HomePageTestCase@35a3d49f</td></tr>
 </table><p>
 </body>
 </html>

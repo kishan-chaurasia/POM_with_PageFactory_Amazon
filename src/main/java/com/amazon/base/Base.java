@@ -7,6 +7,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Properties;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -59,7 +60,7 @@ public class Base {
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		LocalDateTime dateTimeObj = LocalDateTime.now();
 		String dateTimeStamp = dateTimeObj.format(DateTimeFormatter.ofPattern("dd-MM-yyyy_HH_mm_ss"));
-		String destinationFile = System.getProperty("user.dir") + "\\Screenshots\\" + methodName + "_" + dateTimeStamp
+		String destinationFile = System.getProperty("user.dir") + "/Screenshots/" + methodName + "_" + dateTimeStamp
 				+ ".png";
 		try {
 			FileUtils.copyFile(srcFile, new File(destinationFile));

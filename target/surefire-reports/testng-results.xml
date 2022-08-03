@@ -1,37 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="51813" started-at="2022-08-01T17:02:45 IST" finished-at="2022-08-01T17:03:37 IST">
+  <suite name="Suite" duration-ms="195212" started-at="2022-08-03T19:57:30 IST" finished-at="2022-08-03T20:00:45 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="51813" started-at="2022-08-01T17:02:45 IST" finished-at="2022-08-01T17:03:37 IST">
-      <class name="com.amazon.testcases.LoginPageTestCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.LoginPageTestCase@5c909414]" name="setUp" is-config="true" duration-ms="37140" started-at="2022-08-01T17:02:45 IST" finished-at="2022-08-01T17:03:22 IST">
+    <test name="Test" duration-ms="195212" started-at="2022-08-03T19:57:30 IST" finished-at="2022-08-03T20:00:45 IST">
+      <class name="com.amazon.testcases.PaymentGatewayPageTestCase">
+        <test-method status="PASS" signature="loginSetUp()[pri:0, instance:com.amazon.testcases.PaymentGatewayPageTestCase@3bcd05cb]" name="loginSetUp" is-config="true" duration-ms="8233" started-at="2022-08-03T19:59:49 IST" finished-at="2022-08-03T19:59:57 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.amazon.testcases.LoginPageTestCase@5c909414]" name="verifyLoginPageTitleTest" duration-ms="439" started-at="2022-08-01T17:03:22 IST" finished-at="2022-08-01T17:03:22 IST">
+        </test-method> <!-- loginSetUp -->
+        <test-method status="PASS" signature="addMobileRechargeAndPerformPaymentWithDebitCard()[pri:1, instance:com.amazon.testcases.PaymentGatewayPageTestCase@3bcd05cb]" name="addMobileRechargeAndPerformPaymentWithDebitCard" duration-ms="29957" started-at="2022-08-03T19:59:57 IST" finished-at="2022-08-03T20:00:27 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.LoginPageTestCase@5c909414]" name="tearDown" is-config="true" duration-ms="1659" started-at="2022-08-01T17:03:23 IST" finished-at="2022-08-01T17:03:24 IST">
+        </test-method> <!-- addMobileRechargeAndPerformPaymentWithDebitCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.PaymentGatewayPageTestCase@3bcd05cb]" name="tearDown" is-config="true" duration-ms="1107" started-at="2022-08-03T20:00:27 IST" finished-at="2022-08-03T20:00:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.LoginPageTestCase@5c909414]" name="setUp" is-config="true" duration-ms="11612" started-at="2022-08-01T17:03:24 IST" finished-at="2022-08-01T17:03:36 IST">
+        <test-method status="PASS" signature="loginSetUp()[pri:0, instance:com.amazon.testcases.PaymentGatewayPageTestCase@3bcd05cb]" name="loginSetUp" is-config="true" duration-ms="7635" started-at="2022-08-03T20:00:28 IST" finished-at="2022-08-03T20:00:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetUp -->
+        <test-method status="PASS" signature="removePaymentMethodDebitAndCreditCardTest()[pri:2, instance:com.amazon.testcases.PaymentGatewayPageTestCase@3bcd05cb]" name="removePaymentMethodDebitAndCreditCardTest" duration-ms="8831" started-at="2022-08-03T20:00:36 IST" finished-at="2022-08-03T20:00:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removePaymentMethodDebitAndCreditCardTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.PaymentGatewayPageTestCase@3bcd05cb]" name="tearDown" is-config="true" duration-ms="699" started-at="2022-08-03T20:00:45 IST" finished-at="2022-08-03T20:00:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.testcases.PaymentGatewayPageTestCase -->
+      <class name="com.amazon.testcases.AmazonPayPageTestCase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.AmazonPayPageTestCase@13526e59]" name="setUp" is-config="true" duration-ms="15516" started-at="2022-08-03T19:58:25 IST" finished-at="2022-08-03T19:58:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageAmazonLogoTest()[pri:2, instance:com.amazon.testcases.LoginPageTestCase@5c909414]" name="verifyLoginPageAmazonLogoTest" duration-ms="181" started-at="2022-08-01T17:03:36 IST" finished-at="2022-08-01T17:03:36 IST">
+        <test-method status="PASS" signature="verifyAmazonPayPageTitleTest()[pri:1, instance:com.amazon.testcases.AmazonPayPageTestCase@13526e59]" name="verifyAmazonPayPageTitleTest" duration-ms="309" started-at="2022-08-03T19:58:40 IST" finished-at="2022-08-03T19:58:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAmazonPayPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.AmazonPayPageTestCase@13526e59]" name="tearDown" is-config="true" duration-ms="852" started-at="2022-08-03T19:58:40 IST" finished-at="2022-08-03T19:58:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.AmazonPayPageTestCase@13526e59]" name="setUp" is-config="true" duration-ms="30222" started-at="2022-08-03T19:58:41 IST" finished-at="2022-08-03T19:59:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyAmazonPayPageImageTest()[pri:2, instance:com.amazon.testcases.AmazonPayPageTestCase@13526e59]" name="verifyAmazonPayPageImageTest" duration-ms="88" started-at="2022-08-03T19:59:11 IST" finished-at="2022-08-03T19:59:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAmazonPayPageImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.AmazonPayPageTestCase@13526e59]" name="tearDown" is-config="true" duration-ms="1301" started-at="2022-08-03T19:59:12 IST" finished-at="2022-08-03T19:59:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.AmazonPayPageTestCase@13526e59]" name="setUp" is-config="true" duration-ms="14961" started-at="2022-08-03T19:59:13 IST" finished-at="2022-08-03T19:59:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="goToMobileRechargeIconTest()[pri:3, instance:com.amazon.testcases.AmazonPayPageTestCase@13526e59]" name="goToMobileRechargeIconTest" duration-ms="1008" started-at="2022-08-03T19:59:28 IST" finished-at="2022-08-03T19:59:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMobileRechargeIconTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.AmazonPayPageTestCase@13526e59]" name="tearDown" is-config="true" duration-ms="800" started-at="2022-08-03T19:59:29 IST" finished-at="2022-08-03T19:59:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.testcases.AmazonPayPageTestCase -->
+      <class name="com.amazon.testcases.LoginPageTestCase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.LoginPageTestCase@41330d4f]" name="setUp" is-config="true" duration-ms="17254" started-at="2022-08-03T19:57:30 IST" finished-at="2022-08-03T19:57:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.amazon.testcases.LoginPageTestCase@41330d4f]" name="verifyLoginPageTitleTest" duration-ms="53" started-at="2022-08-03T19:57:48 IST" finished-at="2022-08-03T19:57:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.LoginPageTestCase@41330d4f]" name="tearDown" is-config="true" duration-ms="756" started-at="2022-08-03T19:57:48 IST" finished-at="2022-08-03T19:57:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.LoginPageTestCase@41330d4f]" name="setUp" is-config="true" duration-ms="7873" started-at="2022-08-03T19:57:48 IST" finished-at="2022-08-03T19:57:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageAmazonLogoTest()[pri:2, instance:com.amazon.testcases.LoginPageTestCase@41330d4f]" name="verifyLoginPageAmazonLogoTest" duration-ms="148" started-at="2022-08-03T19:57:56 IST" finished-at="2022-08-03T19:57:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageAmazonLogoTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.LoginPageTestCase@5c909414]" name="tearDown" is-config="true" duration-ms="685" started-at="2022-08-01T17:03:36 IST" finished-at="2022-08-01T17:03:37 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.LoginPageTestCase@41330d4f]" name="tearDown" is-config="true" duration-ms="682" started-at="2022-08-03T19:57:56 IST" finished-at="2022-08-03T19:57:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.amazon.testcases.LoginPageTestCase -->
+      <class name="com.amazon.testcases.HomePageTestCase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.HomePageTestCase@503f91c3]" name="setUp" is-config="true" duration-ms="10085" started-at="2022-08-03T19:57:57 IST" finished-at="2022-08-03T19:58:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.amazon.testcases.HomePageTestCase@503f91c3]" name="verifyHomePageTitleTest" duration-ms="2776" started-at="2022-08-03T19:58:07 IST" finished-at="2022-08-03T19:58:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.HomePageTestCase@503f91c3]" name="tearDown" is-config="true" duration-ms="707" started-at="2022-08-03T19:58:10 IST" finished-at="2022-08-03T19:58:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.HomePageTestCase@503f91c3]" name="setUp" is-config="true" duration-ms="10109" started-at="2022-08-03T19:58:11 IST" finished-at="2022-08-03T19:58:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoggedInUserNameTest()[pri:2, instance:com.amazon.testcases.HomePageTestCase@503f91c3]" name="verifyLoggedInUserNameTest" duration-ms="2986" started-at="2022-08-03T19:58:21 IST" finished-at="2022-08-03T19:58:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedInUserNameTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.HomePageTestCase@503f91c3]" name="tearDown" is-config="true" duration-ms="778" started-at="2022-08-03T19:58:24 IST" finished-at="2022-08-03T19:58:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.testcases.HomePageTestCase -->
+      <class name="com.amazon.testcases.MobileRechargePageTestCase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.MobileRechargePageTestCase@17503f6b]" name="setUp" is-config="true" duration-ms="15173" started-at="2022-08-03T19:59:30 IST" finished-at="2022-08-03T19:59:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="insertMobileRechargeDetailsTest()[pri:1, instance:com.amazon.testcases.MobileRechargePageTestCase@17503f6b]" name="insertMobileRechargeDetailsTest" duration-ms="3488" started-at="2022-08-03T19:59:45 IST" finished-at="2022-08-03T19:59:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertMobileRechargeDetailsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.MobileRechargePageTestCase@17503f6b]" name="tearDown" is-config="true" duration-ms="720" started-at="2022-08-03T19:59:48 IST" finished-at="2022-08-03T19:59:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.testcases.MobileRechargePageTestCase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
