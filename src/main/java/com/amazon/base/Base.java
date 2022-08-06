@@ -28,7 +28,7 @@ public class Base {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					System.getProperty("user.dir") + "\\src\\main\\java\\com\\amazon\\config\\config.properties");
+					System.getProperty("user.dir") + "/src/main/java/com/amazon/config/config.properties");
 			prop.load(ip);
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -14,6 +14,7 @@
 			<class name="com.amazon.testcases.AmazonPayPageTestCase" />
 			<class name="com.amazon.testcases.MobileRechargePageTestCase" />
 			<class name="com.amazon.testcases.PaymentGatewayPageTestCase" />
+			<class name="com.amazon.testcases.ILovePdfComPageTestCase" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->				

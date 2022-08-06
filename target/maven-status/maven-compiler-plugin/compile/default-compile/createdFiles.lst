@@ -1,11 +1,12 @@
+com\amazon\pages\AmazonPayPage.class
+com\amazon\pages\ILovePdfComPage.class
+com\amazon\pages\LoginPage.class
+com\amazon\pages\MobileRechargePage.class
+com\amazon\pages\YourAccountPage.class
 com\amazon\util\ReportUtil.class
 com\amazon\base\Base.class
 com\amazon\listeners\Listeners.class
 com\amazon\pages\HomePage.class
 com\amazon\util\TestUtil.class
-com\amazon\pages\AmazonPayPage.class
 com\amazon\pages\PaymentGatewayPage.class
 com\amazon\pages\BillingAddressPage.class
-com\amazon\pages\LoginPage.class
-com\amazon\pages\MobileRechargePage.class
-com\amazon\pages\YourAccountPage.class

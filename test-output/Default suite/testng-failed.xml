@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amazon.testcases.AmazonPayPageTestCase">
+      <class name="com.amazon.testcases.ILovePdfComPageTestCase">
         <methods>
-          <include name="verifyAmazonPayPageTitleTest"/>
-          <include name="verifyAmazonPayPageImageTest"/>
-          <include name="goToMobileRechargeIconTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="UploadJpgImage"/>
         </methods>
-      </class> <!-- com.amazon.testcases.AmazonPayPageTestCase -->
+      </class> <!-- com.amazon.testcases.ILovePdfComPageTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
