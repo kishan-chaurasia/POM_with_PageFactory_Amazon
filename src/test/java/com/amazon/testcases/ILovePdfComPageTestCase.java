@@ -1,5 +1,7 @@
 package com.amazon.testcases;
 
+import java.io.File;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,7 +27,7 @@ public class ILovePdfComPageTestCase extends Base {
 	}
 
 	@Test(priority = 1)
-	public void UploadJpgImage() throws Exception {
+	public void UploadJpgImageAndDownloadAndDelete() throws Exception {
 		iLovePdfComPage.goToJpgToPdfConverterOption();
 		iLovePdfComPage.selectJpgImagesOption();
 		iLovePdfComPage.uplodFileAutoIt("uplodfile.exe", "Apple.jpg");
@@ -35,6 +37,16 @@ public class ILovePdfComPageTestCase extends Base {
 		Assert.assertEquals(count, "2", "Uploded Files Count Mis-match");
 		iLovePdfComPage.convertToPdfBtn();
 		iLovePdfComPage.downloadPdfBtn();
+		Thread.sleep(5000);
+
+		// Verify file download or not
+		String downloadsDirPath = System.getProperty("user.dir") + File.separator + prop.getProperty("downloadsPath");
+		boolean flag = iLovePdfComPage.fileDownloadVerification(downloadsDirPath + File.separator + "Apple.pdf");
+		Assert.assertTrue(flag, "File not found / not downloaded...");
+
+		// Get the latest downloaded file name from a specific directory
+		String downloadedFileName = iLovePdfComPage.getLatestdownloadedFileNameAndDeleteIt(downloadsDirPath);
+		System.out.println(downloadedFileName);
 	}
 
 	@AfterMethod

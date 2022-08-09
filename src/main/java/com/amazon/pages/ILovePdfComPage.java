@@ -1,5 +1,9 @@
 package com.amazon.pages;
 
+import java.io.File;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.amazon.base.Base;
 
 public class ILovePdfComPage extends Base {
+
+	Logger log = LogManager.getLogger(ILovePdfComPage.class);
 
 	@FindBy(xpath = "//a[@title='JPG to PDF']")
 	WebElement jpgToPdfOption;
@@ -68,4 +74,35 @@ public class ILovePdfComPage extends Base {
 	public String uploadedFilesCount() {
 		return FileCount.getText();
 	}
+
+	// Method to Verify File is downloaded or not
+	public boolean fileDownloadVerification(String filePath) {
+		File file = new File(filePath);
+		if (file.exists()) {
+			return true;
+
+		} else {
+			return false;
+		}
+	}
+
+	// Get the latest downloaded file name from a specific directory
+	public String getLatestdownloadedFileNameAndDeleteIt(String downloadsDirPath) {
+		File dir = new File(downloadsDirPath);
+		File[] files = dir.listFiles();
+		if (files == null || files.length == 0) {
+			log.error("File not found / not downloaded...");
+			return null;
+		}
+		File lastModifiedFile = files[0];
+		for (int i = 1; i < files.length; i++) {
+			if (lastModifiedFile.lastModified() < files[i].lastModified()) {
+				lastModifiedFile = files[i];
+			}
+		}
+		String downloadedFileName = lastModifiedFile.getName();
+		lastModifiedFile.delete();
+		return downloadedFileName;
+	}
+
 }

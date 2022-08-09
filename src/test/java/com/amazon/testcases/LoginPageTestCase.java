@@ -15,7 +15,7 @@ import com.amazon.pages.LoginPage;
 public class LoginPageTestCase extends Base {
 
 	LoginPage loginPage;
-	Logger logger = LogManager.getLogger(LoginPageTestCase.class);
+	Logger log = LogManager.getLogger(LoginPageTestCase.class);
 
 	@BeforeMethod
 	public void setUp() {
@@ -26,18 +26,18 @@ public class LoginPageTestCase extends Base {
 
 	@Test(priority = 1)
 	public void verifyLoginPageTitleTest() {
-		logger.debug("**********************LoginPageTitle Test Started************************");
+		log.debug("**********************LoginPageTitle Test Started************************");
 		String title = loginPage.loginPageTitle();
 		Assert.assertEquals(title, "Amazon Sign In");
-		logger.info("**********************Asserting LoginPageTitle Test Passed**********************");
+		log.info("**********************Asserting LoginPageTitle Test Passed**********************");
 	}
 
 	@Test(priority = 2)
 	public void verifyLoginPageAmazonLogoTest() {
-		logger.debug("**********************LoginPageAmazonLogo Test Started************************");
+		log.error("**********************LoginPageAmazonLogo Test Started************************");
 		boolean flag = loginPage.loginPageAmazonLogo();
 		Assert.assertTrue(flag);
-		logger.info("**********************Asserting LoginPageAmazonLogo Test Passed**********************");
+		log.fatal("**********************Asserting LoginPageAmazonLogo Test Passed**********************");
 	}
 
 	@AfterMethod

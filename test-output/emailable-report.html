@@ -9,10 +9,92 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,341</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">243,039</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.testcases.ILovePdfComPageTestCase</td><td><a href="#m0">UploadJpgImage</a></td><td rowspan="1">1659792878638</td><td rowspan="1">21040</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.testcases.ILovePdfComPageTestCase</td><td><a href="#m0">UploadJpgImageAndDownloadAndDelete</a></td><td rowspan="1">1660032892436</td><td rowspan="1">17754</td></tr><tr class="failedodd"><td rowspan="2">com.amazon.testcases.PaymentGatewayPageTestCase</td><td><a href="#m1">addMobileRechargeAndPerformPaymentWithDebitCard</a></td><td rowspan="1">1660032812808</td><td rowspan="1">35814</td></tr><tr class="failedodd"><td><a href="#m2">removePaymentMethodDebitAndCreditCardTest</a></td><td rowspan="1">1660032859086</td><td rowspan="1">21083</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.amazon.testcases.AmazonPayPageTestCase</td><td><a href="#m3">goToMobileRechargeIconTest</a></td><td rowspan="1">1660032777706</td><td rowspan="1">1718</td></tr><tr class="passedeven"><td><a href="#m4">verifyAmazonPayPageImageTest</a></td><td rowspan="1">1660032759800</td><td rowspan="1">209</td></tr><tr class="passedeven"><td><a href="#m5">verifyAmazonPayPageTitleTest</a></td><td rowspan="1">1660032745980</td><td rowspan="1">61</td></tr><tr class="passedodd"><td rowspan="2">com.amazon.testcases.HomePageTestCase</td><td><a href="#m6">verifyHomePageTitleTest</a></td><td rowspan="1">1660032713772</td><td rowspan="1">3496</td></tr><tr class="passedodd"><td><a href="#m7">verifyLoggedInUserNameTest</a></td><td rowspan="1">1660032727429</td><td rowspan="1">3412</td></tr><tr class="passedeven"><td rowspan="2">com.amazon.testcases.LoginPageTestCase</td><td><a href="#m8">verifyLoginPageAmazonLogoTest</a></td><td rowspan="1">1660032702235</td><td rowspan="1">248</td></tr><tr class="passedeven"><td><a href="#m9">verifyLoginPageTitleTest</a></td><td rowspan="1">1660032690065</td><td rowspan="1">227</td></tr><tr class="passedodd"><td rowspan="1">com.amazon.testcases.MobileRechargePageTestCase</td><td><a href="#m10">insertMobileRechargeDetailsTest</a></td><td rowspan="1">1660032798666</td><td rowspan="1">3474</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.amazon.testcases.ILovePdfComPageTestCase#UploadJpgImage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.amazon.testcases.ILovePdfComPageTestCase#UploadJpgImageAndDownloadAndDelete</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=102.0.5005.63)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-J505A6L&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a3431fbdd71b0478f6a122596aac29a, clickElement {id=4e4f97cf-8e85-46d8-aabc-7bb06f5f3ca8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Kishan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4a3431fbdd71b0478f6a122596aac29a)] -&gt; xpath: //a[@id=&apos;pickfiles&apos;]//*[name()=&apos;svg&apos;]]
+Session ID: 4a3431fbdd71b0478f6a122596aac29a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy32.click(Unknown Source)
+	at com.amazon.pages.ILovePdfComPage.addMoreFilesBtn(ILovePdfComPage.java:53)
+	at com.amazon.testcases.ILovePdfComPageTestCase.UploadJpgImageAndDownloadAndDelete(ILovePdfComPageTestCase.java:34)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.amazon.testcases.PaymentGatewayPageTestCase#addMobileRechargeAndPerformPaymentWithDebitCard</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@id , &apos;-18_5&apos;)]&quot;}
+  (Session info: headless chrome=102.0.5005.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-J505A6L&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c52b80cb9d85ad885a0b06a6d56cc17, findElement {using=xpath, value=//a[contains(@id , &apos;-18_5&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Kishan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52374/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c52b80cb9d85ad885a0b06a6d56cc17
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at com.amazon.pages.PaymentGatewayPage.enterDebitOrCreditCardDetails(PaymentGatewayPage.java:65)
+	at com.amazon.testcases.PaymentGatewayPageTestCase.addMobileRechargeAndPerformPaymentWithDebitCard(PaymentGatewayPageTestCase.java:62)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.amazon.testcases.PaymentGatewayPageTestCase#removePaymentMethodDebitAndCreditCardTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@data-action=&apos;a-expander-toggle&apos;]&quot;}
+  (Session info: headless chrome=102.0.5005.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-J505A6L&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d930124e6d53c96b9dcc3035f4c5bb93, findElement {using=xpath, value=//a[@data-action=&apos;a-expander-toggle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Kishan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52486/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d930124e6d53c96b9dcc3035f4c5bb93
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy32.click(Unknown Source)
+	at com.amazon.pages.YourAccountPage.yourSavedCreditAndDebitCardsOption(YourAccountPage.java:39)
+	at com.amazon.testcases.PaymentGatewayPageTestCase.removePaymentMethodDebitAndCreditCardTest(PaymentGatewayPageTestCase.java:77)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.amazon.testcases.AmazonPayPageTestCase#goToMobileRechargeIconTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.amazon.testcases.AmazonPayPageTestCase#verifyAmazonPayPageImageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.amazon.testcases.AmazonPayPageTestCase#verifyAmazonPayPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.amazon.testcases.HomePageTestCase#verifyHomePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.amazon.testcases.HomePageTestCase#verifyLoggedInUserNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.amazon.testcases.LoginPageTestCase#verifyLoginPageAmazonLogoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.amazon.testcases.LoginPageTestCase#verifyLoginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.amazon.testcases.MobileRechargePageTestCase#insertMobileRechargeDetailsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

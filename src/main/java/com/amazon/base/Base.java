@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -40,8 +41,16 @@ public class Base {
 
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", prop.getProperty("chromeDriverPath"));
+
+			// Changing Chrome's default Download Path & Chrome Headless Option
+			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+			chromePrefs.put("profile.default_content_settings.popups", 0);
+			chromePrefs.put("download.default_directory",
+					System.getProperty("user.dir") + File.separator + prop.getProperty("downloadsPath"));
 			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("prefs", chromePrefs);
 			options.setHeadless(Boolean.parseBoolean(prop.getProperty("headless")));
+
 			driver = new ChromeDriver(options);
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", prop.getProperty("geckoDriverPath"));

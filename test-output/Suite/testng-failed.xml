@@ -6,21 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.amazon.testcases.MobileRechargePageTestCase">
+      <class name="com.amazon.testcases.ILovePdfComPageTestCase">
         <methods>
-          <include name="setUp"/>
-          <include name="insertMobileRechargeDetailsTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.amazon.testcases.MobileRechargePageTestCase -->
-      <class name="com.amazon.testcases.AmazonPayPageTestCase">
-        <methods>
-          <include name="verifyAmazonPayPageImageTest"/>
-          <include name="goToMobileRechargeIconTest"/>
+          <include name="UploadJpgImageAndDownloadAndDelete"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.amazon.testcases.AmazonPayPageTestCase -->
+      </class> <!-- com.amazon.testcases.ILovePdfComPageTestCase -->
       <class name="com.amazon.testcases.PaymentGatewayPageTestCase">
         <methods>
           <include name="loginSetUp"/>
