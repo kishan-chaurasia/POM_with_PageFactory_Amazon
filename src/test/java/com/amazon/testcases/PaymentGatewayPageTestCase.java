@@ -59,7 +59,7 @@ public class PaymentGatewayPageTestCase extends Base {
 		paymentGatewayPage.selectDebitOrCreditCardPaymentCheckbox();
 		paymentGatewayPage.addDebitOrCreditCard();
 		testUtil.switchToFrame("ApxSecureIframe");
-		paymentGatewayPage.enterDebitOrCreditCardDetails("5299920000000149", "Testing", 06, 2025);
+		paymentGatewayPage.enterDebitOrCreditCardDetails("5299920000000149", "Testing Account", 06, 2025);
 		paymentGatewayPage.addYourCardButton();
 		driver.switchTo().parentFrame();
 		paymentGatewayPage.enterCardCvv("246");
@@ -76,7 +76,6 @@ public class PaymentGatewayPageTestCase extends Base {
 				driver.findElement(By.xpath("//span[text() = 'Your default purchase preference']")));
 		yourAccountPage.yourSavedCreditAndDebitCardsOption();
 		yourAccountPage.removeDebitAndCreditCardButton();
-		Thread.sleep(2000);
 		yourAccountPage.confirmRemoveDebitAndCreditCardButton();
 		String Message = yourAccountPage.paymentMethodRemovedMessage();
 		Assert.assertEquals(Message, "Payment method removed", "Assert Message not Found");
@@ -86,5 +85,4 @@ public class PaymentGatewayPageTestCase extends Base {
 	public void tearDown() {
 		driver.quit();
 	}
-
 }

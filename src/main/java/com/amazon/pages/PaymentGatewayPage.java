@@ -6,8 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.amazon.base.Base;
+import com.amazon.util.TestUtil;
 
 public class PaymentGatewayPage extends Base {
+
+	TestUtil testUtil = new TestUtil();
 
 	@FindBy(xpath = "//input[@value = 'SelectableAddCreditCard']")
 	WebElement cardPaymentCheckBox;
@@ -33,7 +36,7 @@ public class PaymentGatewayPage extends Base {
 	@FindBy(xpath = "//input[@name = 'addCreditCardVerificationNumber0']")
 	WebElement cardCvv;
 
-	@FindBy(xpath = "//span[text() = 'Save card as per new RBI guidelines.']/preceding-sibling :: input")
+	@FindBy(xpath = "//div[contains(@id , '-113')]//input")
 	WebElement saveCardRbiGuidelinesCheckbox;
 
 	@FindBy(xpath = "//input[@name = 'ppw-widgetEvent:SetPaymentPlanSelectContinueEvent']")
@@ -79,7 +82,8 @@ public class PaymentGatewayPage extends Base {
 	}
 
 	// Tick Checkbox Save Card as per New RBI Guidelines
-	public void saveCardAsPerNewRbiGuidelinesCheckbox() {
+	public void saveCardAsPerNewRbiGuidelinesCheckbox() throws InterruptedException {
+		Thread.sleep(1000);
 		saveCardRbiGuidelinesCheckbox.click();
 	}
 

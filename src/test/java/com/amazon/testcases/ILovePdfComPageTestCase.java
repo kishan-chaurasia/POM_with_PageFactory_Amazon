@@ -26,7 +26,7 @@ public class ILovePdfComPageTestCase extends Base {
 		driver.navigate().to("https://www.ilovepdf.com");
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, enabled = false)
 	public void UploadJpgImageAndDownloadAndDelete() throws Exception {
 		iLovePdfComPage.goToJpgToPdfConverterOption();
 		iLovePdfComPage.selectJpgImagesOption();

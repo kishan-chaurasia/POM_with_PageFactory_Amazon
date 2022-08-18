@@ -3,6 +3,7 @@ package com.amazon.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import com.amazon.base.Base;
 
 public class YourAccountPage extends Base {
@@ -18,7 +19,6 @@ public class YourAccountPage extends Base {
 
 	@FindBy(xpath = "//span[text() = 'Confirm remove']/preceding-sibling :: input")
 	WebElement confirmRemoveBtn;
-	//div[contains(@id , '-33')]/following :: span[text() = 'Confirm remove']/preceding-sibling :: input
 
 	@FindBy(xpath = "//span[text() = 'Payment method removed']")
 	WebElement paymentMethodRemoved;
@@ -45,7 +45,8 @@ public class YourAccountPage extends Base {
 	}
 
 	// Click on Debit and Credit Card Confirmation Remove Button
-	public void confirmRemoveDebitAndCreditCardButton() {
+	public void confirmRemoveDebitAndCreditCardButton() throws InterruptedException {
+		Thread.sleep(2000);
 		confirmRemoveBtn.click();
 	}
 
